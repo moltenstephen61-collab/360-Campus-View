@@ -44,8 +44,10 @@ Here is a quick look at the interface in action:
 ---
 
 ## 🔧 How to Make it Work (Step-by-Step)
-
+### 1. Clone the Project
+https://github.com/moltenstephen61-collab/360-Campus-View.git
 Follow these steps to set up the project and get it running locally on your machine:
+
 ### 2. Open in NetBeans & Fix Dependencies
 1. Open NetBeans 8.2, go to File -> Open Project, and select this project folder.
 2. If you see warnings about missing libraries, right-click the project name and open Properties.
