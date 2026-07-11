@@ -46,6 +46,7 @@ Here is a quick look at the interface in action:
 ## 🔧 How to Make it Work (Step-by-Step)
 ### 1. Clone the Project
 https://github.com/moltenstephen61-collab/360-Campus-View.git
+
 Follow these steps to set up the project and get it running locally on your machine:
 
 ### 2. Open in NetBeans & Fix Dependencies
