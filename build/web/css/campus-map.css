@@ -1,0 +1,172 @@
+/* CheesyMoeez - Campus Map View NetBeans 8.2 Safe Version */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Standard best practice for map absolute coordinates */
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+html, body {
+  /* Hides main system scrollbars safely without breaking layout elements */
+  overflow: hidden; 
+  height: 100vh;
+  width: 100vw;
+}
+
+*::selection {
+  background-color: #f2b207; /* Sunflower Gold */
+}
+
+body {
+  position: relative;
+  background-image: url(../images/campus-map/campus-map-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header Styling */
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 12px 24px;
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-4px);
+}
+
+.location-info {
+  text-align: center;
+}
+
+#location-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 2px;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.center-container {
+  padding: 8rem;
+}
+
+/* campus map */
+.map-container {
+  position: relative;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 16px;
+  transition: 500ms ease-in-out;
+}
+
+.map-container:hover {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px) saturate(200%) brightness(110%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%) brightness(110%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+  cursor: crosshair;
+}
+
+.campus-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.outdoor-location-button {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 250ms ease-in-out;
+  background-color: #002d85; /* Regal Navy */
+  color: #ffffff;
+}
+
+.outdoor-location-button:hover {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f2b207; /* Sunflower Gold */
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Precise Map Placements */
+.outdoor-location-button-1 { top: 78.5%; left: 53.3%; }
+.outdoor-location-button-2 { top: 81%; left: 46.5%; }
+.outdoor-location-button-3 { top: 78%; left: 43.75%; }
+.outdoor-location-button-4 { top: 78.5%; left: 34.75%; }
+.outdoor-location-button-5 { top: 30.5%; left: 30%; }
+.outdoor-location-button-6 { top: 25.25%; left: 32.25%; }
+.outdoor-location-button-7 { top: 15.75%; left: 41%; }
+.outdoor-location-button-8 { top: 22.25%; left: 46.4%; }
+.outdoor-location-button-9 { top: 16%; left: 51%; }
+.outdoor-location-button-10 { top: 38.5%; left: 67.5%; }
+.outdoor-location-button-11 { top: 66%; left: 65.75%; }
+.outdoor-location-button-12 { top: 65.5%; left: 54.5%; }
+.outdoor-location-button-13 { top: 38%; left: 36.25%; }
+
+/* Indoor layout controls */
+.indoor-location-button {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out, filter 250ms ease-in-out;
+  background-color: #002d85; /* Regal Navy */
+  color: #ffffff;
+}
+
+.indoor-location-button:hover {
+  cursor: pointer;
+  background-color: #f2b207; /* Sunflower Gold */
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}

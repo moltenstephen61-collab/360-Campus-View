@@ -1,0 +1,108 @@
+/* CheesyMoeez - Search View NetBeans 8.2 Safe Version */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Highly recommended for absolute layout centering */
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-image: url(../images/index-background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* header */
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 12px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-4px);
+}
+
+/* glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* search wrapper container */
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* search-bar input styling */
+.search-bar {
+  border: 0;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 24rem; /* Replaced extreme horizontal padding with a safe width constraint */
+  outline: 0;
+  text-align: center;
+}
+
+input[type="text"] {
+  color: #333333;
+  font-size: 16px;
+}
+
+.submit-button {
+  color: #ffffff;
+  background-color: #002d85; /* Regal Navy fallback */
+  padding: 15px 30px;
+  margin: 0.5rem;
+  border-radius: 16px;
+  border-width: 0;
+  font-size: 16px;
+  transition-duration: 500ms;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #f2b207; /* Sunflower Gold fallback */
+  transform: scale(1.04);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
