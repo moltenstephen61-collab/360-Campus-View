@@ -47,6 +47,4 @@ Here is a quick look at the interface in action:
 
 Follow these steps to set up the project and get it running locally on your machine:
 
-### 1. Clone the Project
-```bash
-git clone [https://github.com/YOUR_USERNAME/CampusTour360_Fixed.git](https://github.com/YOUR_USERNAME/CampusTour360_Fixed.git)
+
