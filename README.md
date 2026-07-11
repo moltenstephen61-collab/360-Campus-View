@@ -12,7 +12,7 @@ Here is a quick look at the interface in action:
 
 | 360° Interactive Viewer | Dynamic Location Search |
 | --- | --- |
-| ![Viewer Page](screenshots/free_look_viewer.jpg) | ![Search Page](screenshots/search_view.jpg) |
+| ![Viewer Page](screenshots/free_look_view.jpg) | ![Search Page](screenshots/search_view.jpg) |
 
 ---
 
