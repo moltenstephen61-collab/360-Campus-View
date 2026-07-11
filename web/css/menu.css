@@ -1,0 +1,179 @@
+/* CheesyMoeez - Menu View NetBeans 8.2 Safe Version */
+
+* {
+  /* general attributes */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Highly recommended to ensure fixed width/height cards align correctly */
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  /* background */
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../images/index-background-2.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+*::selection {
+  background-color: #f2b207; /* Sunflower Gold */
+}
+
+/* Header Styling */
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 12px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-4px);
+}
+
+.location-info {
+  text-align: center;
+}
+
+#location-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 2px;
+}
+
+.subtitle {
+  font-size: 12px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* load */
+.load {
+  /* position the .center-box in the middle */
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  height: 100vh;
+  /* Loading effect */
+  animation: load 500ms ease-in-out forwards;
+  filter: blur(30px);
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@keyframes load {
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px;
+  padding-bottom: 20px;
+  color: rgb(64, 64, 64);
+}
+
+/* all option Boxes */
+.button {
+  color: #ffffff;
+  background-color: #002d85; /* Regal Navy */
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 16px;
+  border-width: 0;
+  margin: 40px 0 0 0;
+  transition-duration: 500ms;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #f2b207; /* Sunflower Gold */
+  transform: scale(1.04);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+.map-option-box,
+.search-option-box,
+.free-look-option-box {
+  /* general attributes */
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  /* transition */
+  transition: 500ms ease-in-out;
+  /* width and height */
+  width: 20rem;
+  height: 35rem;
+}
+
+.map-option-box:hover,
+.search-option-box:hover,
+.free-look-option-box:hover {
+  transform: scale(1.04);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+.map-option-image,
+.search-option-image {
+  width: 325px;
+  margin: 5px 0 0 0;
+  transition: 500ms;
+  border-radius: 16px;
+}
+
+.map-option-image:hover,
+.search-option-image:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}

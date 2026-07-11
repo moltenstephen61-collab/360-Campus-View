@@ -1,0 +1,89 @@
+/* CheesyMoeez - Index View NetBeans 8.2 Safe Version */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding doesn't skew heights */
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+*::selection {
+  background-color: #f2b207; /* Sunflower Gold */
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+body {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(../images/index-background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  /* Code to position the .center-box in the middle */
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrollbars from kicking in during animations */
+}
+
+.load {
+  /* Loading effect */
+  animation: load 500ms ease-in-out forwards;
+  filter: blur(30px);
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@keyframes load {
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 40px;
+  color: #002d85; /* Regal Navy */
+}
+
+p {
+  font-size: 20px;
+  margin: 10px;
+  color: #ffffff;
+}
+
+.center-box {
+  /* general attributes */
+  border-radius: 16px;
+  padding: 35px;
+  text-align: center;
+  /* transition */
+  transition: 500ms ease-in-out;
+}
+
+.start-button {
+  color: #ffffff;
+  background-color: #002d85; /* Regal Navy */
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 16px;
+  border-width: 0;
+  margin: 40px 0 0 0;
+  transition-duration: 500ms;
+}
+
+.start-button:hover {
+  cursor: pointer;
+  background-color: #f2b207; /* Sunflower Gold (Duplicate entry removed) */
+  transform: scale(1.08);
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
